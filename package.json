@@ -1,0 +1,52 @@
+{
+  "name": "opcg-deck-builder",
+  "version": "1.0.0",
+  "description": "Deck builder/collection manager for Bandai's One Piece Card Game",
+  "main": "index.js",
+  "author": "Ondřej Moravec",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
+  },
+  "keywords": [
+    "One Piece",
+    "TCG",
+    "deck builder"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkcmoris/opcg-deck-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hkcmoris/opcg-deck-builder/issues"
+  },
+  "homepage": "https://github.com/hkcmoris/opcg-deck-builder#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.4.0",
+    "css-minimizer-webpack-plugin": "^3.1.1",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "postcss-loader": "^6.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "sass": "^1.43.5",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^5.8.0"
+  }
+}
